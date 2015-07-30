@@ -133,9 +133,8 @@ If you then view page source (usually right click => view source) you'll then se
 
 ### Adding Users
 
-Copy the XML that was generated an go to your backup file.
+Copy the XML that was generated,go to your backup file and find the line nextuid:
 
-Go to your backup file and find the line nextui:
 ```xml
 <nextuid>2005</nextuid>
 ```
@@ -145,7 +144,7 @@ Change the number to last user's uid plus one, in the example 2006 + 1 = 2007
 <nextuid>2007</nextuid>
 ```
 
-An paste the XML just above it:
+Paste the users XML just above it:
 ```xml
 ....
 		<user>
