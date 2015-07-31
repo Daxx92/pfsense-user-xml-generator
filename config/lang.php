@@ -9,6 +9,7 @@ return [
 		'file-upload' => 'Upload new file'
 	],
 	'messages' => [
+		'missing' => 'All fields are mandatory',
 		'upload' => [
 			'success' => 'File uploaded!',
 			'failure' => 'File upload failed, please try again'
