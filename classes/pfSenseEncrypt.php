@@ -2,9 +2,9 @@
 
 class pfSenseEncrypt{
 
-	const PASSWORD = 0;
-	const MD5 = 1;
-	const NT_HASH = 2;
+	const PASSWORD = 'password';
+	const MD5 = 'md5-hash';
+	const NT_HASH = 'nt-hash';
 
 	public function encryptPassword( $password ){
 		$encrypted = [];
@@ -50,7 +50,7 @@ class pfSenseEncrypt{
 		https://github.com/pfsense/pfsense/blob/master/etc/inc/auth.inc
 	*/
 	private function local_user_set_password(& $user, $password) {
-		$user['password'] = crypt($password);
+		$user['password'] = @crypt($password);
 		$user['md5-hash'] = md5($password);
 
 		// Converts ascii to unicode.
