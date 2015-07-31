@@ -38,6 +38,7 @@ return [
 				'default' => 'Select one',
 				'html-output' => 'View as HTML',
 				'source-output' => 'View from source',
+				'submit' => 'Get XML'
 			]
 		]
 	]
